@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /secret/
+Disallow: /vault/
+Disallow: /scripts/
+User-agent: *
+Allow: /$
+Disallow: /secret/
+Disallow: /drafts/

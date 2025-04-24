@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Garcia – DevOps, Homelabs, and Infrastructure Engineering</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #00ff90;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.3em;
+      margin-top: 2em;
+    }
+    a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background: #222;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    .disabled {
+      opacity: 0.5;
+      cursor: default;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>juan(1)</h1>
+
+  <h2>NAME</h2>
+  <p>juan - DevOps learner, ethical hacking enthusiast, system builder, cyberpunk, 0x1G</p>
+
+  <h2>SYNOPSIS</h2>
+  <p>juan [--automate] [--learn] [--build] [--serve] [--debug] [--fortify]</p>
+
+  <h2>DESCRIPTION</h2>
+  <p>
+    Juan Garcia is a self-taught technologist from California passionate about Linux, open-source infrastructure, and ethical computing. With a background in IT support and systems administration, Juan builds internal tooling and networked environments that emphasize reliability, security, and thoughtful design.
+  </p>
+  <p>
+    Driven by curiosity and purpose, Juan explores the intersection of automation, homelab architecture, and cybersecurity while maintaining a long-term vision of building tools and infrastructure that uplift small teams and communities. He believes in learning deeply, building deliberately, and documenting the journey.
+  </p>
+
+  <h2>WHAT I WORK ON</h2>
+  <ul>
+    <li><strong>gg3utils</strong> – A collection of personal utilities for Python and Bash automation. Includes logging, file sync, system checks, and tool wrappers for DevOps workflows.</li>
+    <li><strong>nginx-hardened</strong> – Hardened NGINX deployment template with strong SSL config, rate limiting, and secure headers.</li>
+    <li><strong>jenkins-pipelines</strong> – Jenkins jobs to automate snapshotting VMs, syncing backups, and restarting critical services.</li>
+    <li><strong>ssh-key-structure</strong> – A personal SSH key strategy using namespacing (`key.gg3.git`) for scalable and secure device-level access control.</li>
+  </ul>
+
+  <h2>HOMELAB</h2>
+  <p>
+    Hosted on an XCP-ng hypervisor with VLAN segmentation via pfSense and internal DNS. Features WireGuard tunnels, backup automation, and Git-based config management. Designed to test real-world production setups, integrate self-hosted tools, and refine deployment workflows.
+  </p>
+  <ul>
+    <li><strong>Ubuntu Dev VM</strong> – Jenkins + automation scripts</li>
+    <li><strong>Rocky Linux</strong> – Red Hat compatible services</li>
+    <li><strong>Kali Linux</strong> – Ethical hacking toolsets</li>
+    <li><strong>Prod Debian</strong> – Hardened NGINX + SMB + Docker</li>
+    <li><strong>Pi on VLAN99</strong> – WireGuard gateway</li>
+  </ul>
+
+  <h2>OPTIONS</h2>
+  <ul>
+    <li><strong>--github</strong> <a href="https://github.com/0xjuang">github.com/0xjuang</a></li>
+    <li><strong>--email</strong> <a href="mailto:juan@gg3.dev">juan@gg3.dev</a></li>
+    <li><strong>--linkedin</strong> <a href="https://linkedin.com/in/0xjuang">linkedin.com/in/0xjuang</a></li>
+  </ul>
+
+  <h2>FILES</h2>
+  <ul>
+    <li><a href="/jgarcia.cv.pdf">jgarcia.cv.pdf</a> – resume</li>
+    <li class="disabled">gg3utils.cheatsheet.txt – coming soon</li>
+    <li class="disabled">nginx.quickstart.conf – coming soon</li>
+    <li class="disabled">init.labshell.sh – coming soon</li>
+  </ul>
+
+  <h2>EXAMPLES</h2>
+  <pre><code># create a virtual environment
+python3 -m venv env
+
+# sync backup job from jenkins
+bash jenkins_sync.sh
+
+# apply hardened nginx config
+cp hardened.conf /etc/nginx/sites-available/default
+
+# scan subnet for devices
+nmap -sn 10.10.10.0/24
+
+# deploy static site
+cd /var/www/info && git pull origin main
+</code></pre>
+
+  <h2>NOTES</h2>
+  <p>This site is my manual. It holds more detail than LinkedIn, more signal than a resume, and more context than GitHub. Built in plain HTML, served by NGINX on hardened Debian inside an XCP-ng hypervisor.</p>
+
+  <h2>SEE ALSO</h2>
+  <ul>
+    <li><a href="https://gg3.dev">gg3.dev(7)</a></li>
+    <li><a href="https://tailscale.com/">tailscale(1)</a></li>
+    <li><a href="https://xcp-ng.org/">xcp-ng(1)</a></li>
+    <li><a href="https://xen-orchestra.com/">xen-orchestra(1)</a></li>
+    <li><a href="https://obsidian.md/">obsidian(1)</a></li>
+    <li><a href="https://nginx.org/">nginx(1)</a></li>
+    <li><a href="https://letsencrypt.org/">letsencrypt(1)</a></li>
+    <li><a href="https://git-scm.com/">git(1)</a></li>
+  </ul>
+
+  <h2>BUGS</h2>
+  <p>No known bugs. Might randomly update the site while live. Viewer discretion advised.</p>
+
+  <h2>AUTHOR</h2>
+  <p>Juan Garcia &lt;juan@gg3.dev&gt;</p>
+  <p style="font-size:0.75rem;opacity:0.5;">
+    Project by Juan Garcia (@0xjuang) <br>
+    Signed: 0x1G <br>
+    Part of the Oak Root Collective – Scaling Quietly, Branching Endlessly <br>
+    <a href="https://gg3.dev">gg3.dev</a>
+  </p>
+
+  <!-- Psst... /secret is where the real fun begins. -->
+  <!-- echo 'Easter egg unlocked: You know how to read source.' -->
+</body>
+</html>
+

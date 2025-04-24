@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Garcia – DevOps & Automation</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #00ff90;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.3em;
+      margin-top: 2em;
+    }
+    a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background: #222;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>juan(1)</h1>
+
+  <h2>NAME</h2>
+  <p>juan - DevOps learner, ethical hacking enthusiast, tinkerer, cyberpunk</p>
+
+  <h2>SYNOPSIS</h2>
+<p>juan [--automate] [--learn] [--build]</p>
+
+  <h2>DESCRIPTION</h2>
+  <p>
+    Juan Garcia is a tech enthusiast from California with a background in IT support and automation. Passionate about scripting, ethical hacking, and building tools that solve problems.
+  </p>
+
+  <h2>HOMELAB</h2>
+  <p>
+    Runs a mini PC hypervisor with <strong>XCP-ng</strong>, hosting several virtual machines:
+  </p>
+  <ul>
+    <li><strong>Ubuntu Dev VM</strong> – for Python, automation scripts, and local development</li>
+    <li><strong>Rocky Linux VM</strong> – for Red Hat ecosystem testing</li>
+    <li><strong>Kali Linux VM</strong> – for ethical hacking and security testing</li>
+    <li><strong>Prod Debian VM</strong> – hosts Nginx-powered personal site, SMB, and FTP servers (soon to be SFTP)</li>
+    <li><strong>XOA VM</strong> – running Xen Orchestra for managing XCP-ng infrastructure via web UI</li>
+  </ul>
+
+  <h2>OPTIONS</h2>
+  <ul>
+    <li><strong>--github</strong> <a href="https://github.com/autodevsecops">github.com/autodevsecops</a></li>
+    <li><strong>--email</strong> <a href="mailto:juan@gg3.dev">juan@gg3.dev</a></li>
+    <li><strong>--resume</strong> <a href="/jgarcia.cv.pdf">Download</a></li> </ul>
+
+  <h2>PROJECTS</h2>
+  <ul>
+    <li><strong>codex-automata</strong> - Learning automation with Python (in progress)</li>
+    <li><strong>ish-shell-setup</strong> - Mobile dev environment on iPad using iSH + Tailscale</li>
+    <li><strong>homelab-configs</strong> - Nginx, SMB, FTP (soon SFTP) server configs</li>
+    <li><strong>eph3 (planned)</strong> - Future stealth or ephemeral systems concept (exploration phase)</li>
+  </ul>
+
+  <h2>FILES</h2>
+  <ul>
+    <li>~/docs/resume.pdf</li>
+    <li>~/scripts/deploy.sh</li>
+    <li>~/vault/enchiridion/</li>
+    <li>~/homelab/xcp-ng/</li>
+  </ul>
+
+  <h2>EXAMPLES</h2>
+  <pre><code># create a virtual environment
+python3 -m venv env
+
+# run script to sync files
+bash sync.sh
+
+# start SMB and FTP services
+sudo systemctl start smbd vsftpd
+
+# test VLAN isolation from Pi
+ping -c 3 192.168.99.10
+
+# pull latest site update
+cd /var/www/info && git pull origin main
+
+# monitor VMs using XO CLI
+yarn xo-cli list-vms</code></pre>
+
+  <h2>NOTES</h2>
+  <p>Site built with HTML and JetBrains Mono. Inspired by man pages and terminal aesthetics. Hosted via Nginx on a self-managed Debian VM inside an XCP-ng hypervisor.</p>
+
+  <h2>SEE ALSO</h2>
+  <ul>
+    <li><a href="https://tailscale.com/">tailscale(1)</a></li>
+    <li><a href="https://obsidian.md/">obsidian(1)</a></li>
+    <li><a href="https://www.cloudflare.com/">cloudflare(1)</a></li>
+    <li><a href="https://xcp-ng.org/">xcp-ng(1)</a></li>
+    <li><a href="https://xen-orchestra.com/">xen-orchestra(1)</a></li>
+    <li><a href="https://nginx.org/">nginx(1)</a></li>
+    <li><a href="https://letsencrypt.org/">letsencrypt(1)</a></li>
+    <li><a href="https://git-scm.com/">git(1)</a></li>
+  </ul>
+
+  <h2>BUGS</h2>
+  <p>No known bugs. Might randomly update the site while live. Viewer discretion advised.</p>
+
+  <h2>AUTHOR</h2>
+  <p>Juan Garcia <juan@gg3.dev></p>
+
+   <p style="font-size:0.75rem;opacity:0.4;">
+
+    // hidden in the DOM
+  </p>
+  <!-- Psst... /secret is where the real fun begins. -->
+  <!-- echo 'Easter egg unlocked: You know how to read source.' -->
+</body>
+</html>
+
